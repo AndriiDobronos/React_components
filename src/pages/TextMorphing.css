@@ -1,0 +1,20 @@
+.text-morphing {
+    font-size: 3rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.text-char {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.text-morphing.hovered .text-char {
+    transform: scale(1.5) rotate(15deg);
+    color: #ff6347; /* Изменение цвета при наведении */
+}
+
+.text-morphing.hovered .text-char:nth-child(even) {
+    transform: scale(1.2) rotate(-15deg);
+    color: #1e90ff; /* Другой цвет для четных символов */
+}

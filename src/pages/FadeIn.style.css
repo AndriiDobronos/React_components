@@ -1,0 +1,25 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    margin-bottom: 50px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.image-container.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

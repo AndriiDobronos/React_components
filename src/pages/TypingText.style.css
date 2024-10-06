@@ -1,0 +1,18 @@
+.page {
+    padding: 20px;
+    font-family:'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
+
+#page {
+
+}
+
+.typing-effect {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.text-section {
+    margin-bottom: 50px;
+}

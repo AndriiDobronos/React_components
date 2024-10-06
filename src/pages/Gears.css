@@ -1,0 +1,77 @@
+.gears-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.gear {
+    transform-origin: center;
+}
+
+.rotate-large {
+    position: absolute;
+    animation: rotateLarge 3s ease-in-out forwards;
+    left:560px;
+}
+
+.rotate-small {
+    position: absolute;
+    animation: rotateSmall 3s ease-in-out forwards;
+    left: 760px;
+}
+
+@keyframes rotateLarge {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotateSmall {
+    from {
+        transform: rotate(22.5deg);
+    }
+    to {
+        transform: rotate(382.5deg); /* Противоположное направление для зацепления */
+    }
+}
+
+.up-list {
+    animation: upList 3s ease-in-out forwards;
+}
+
+@keyframes upList {
+    0% {
+        transform: translateY(0px) ;
+    }
+    50% {
+        transform: translateY(-650px) ;
+    }
+    100% {
+        transform: translateY(-650px) rotateY(-88deg) ;
+    }
+}
+/*scaleX(20)*/
+.list {
+    transform-origin: center;
+    margin-top: 460px;
+    background-color: #d0cd02;
+}
+
+.icon:hover {
+    filter: blur(5px);
+    animation: 3s infinite pulse;
+    animation-composition: add;
+}
+
+@keyframes pulse {
+    0% {
+        filter: blur(10px);
+    }
+    100% {
+        filter: blur(20px);
+    }
+}
